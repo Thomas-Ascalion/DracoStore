@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DracoStore - Interface de Gestion</title>
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- En-tête avec le logo et la barre de navigation -->
+    <header class="header" role="banner">
+      <div class="logo">
+        <img
+          src="/assets/dracostore_logo.png"
+          alt=""
+          aria-label="Logo DracoStore"
+        />
+      </div>
+      <nav class="navbar-container" aria-label="Navigation principale">
+        <!-- Navigation principale avec des liens pour différentes sections -->
+        <ul class="nav-links" role="menubar">
+          <li role="none"><a href="#caisse" role="menuitem">Caisse</a></li>
+          <li role="none"><a href="#items" role="menuitem">Items</a></li>
+          <li role="none"><a href="#client" role="menuitem">Client</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="main-content" role="main">
+      <!-- Section de recherche -->
+      <section class="search" aria-labelledby="search-title">
+        <h2 id="search-title" class="visually-hidden">Barre de recherche</h2>
+        <div class="search-container" aria-label="Recherche de produit">
+          <!-- Div contenant l'icône de recherche et la flèche pour ouvrir la recherche -->
+          <div
+            class="search-icon-wrapper"
+            onclick="toggleSearch()"
+            aria-expanded="false"
+            aria-controls="searchField"
+          >
+            <img
+              src="/assets/wand-sparkles-solid.svg"
+              style="width: 100px; height: 100px"
+              alt=""
+              class="search-icon"
+              aria-hidden="true"
+            />
+            <span class="arrow" aria-hidden="true"> → </span>
+          </div>
+          <!-- Champ de recherche caché par défaut -->
+          <input
+            type="text"
+            class="search-input"
+            placeholder="Rechercher un produit..."
+            id="searchField"
+            aria-label="Champ de recherche"
+          />
+        </div>
+
+        <!-- Catégories de recherche -->
+        <div aria-label="Catégories de recherche" role="navigation">
+          <article class="category-search">
+            <div class="category">
+              <img
+                src="./assets/feather.png"
+                alt=""
+                style="width: 50px; height: 50px"
+              />
+            </div>
+            <p>Nourriture</p>
+          </article>
+          <article class="category-search">
+            <div class="category">
+              <img
+                src="./assets/feather.png"
+                alt=""
+                style="width: 50px; height: 50px"
+              />
+            </div>
+            <p>Armes</p>
+          </article>
+          <article class="category-search">
+            <div class="category">
+              <img
+                src="./assets/feather.png"
+                alt=""
+                style="width: 50px; height: 50px"
+              />
+            </div>
+            <p>Armure</p>
+          </article>
+          <article class="category-search">
+            <div class="category">
+              <img
+                src="./assets/feather.png"
+                alt=""
+                style="width: 50px; height: 50px"
+              />
+            </div>
+            <p>Potions</p>
+          </article>
+          <article class="category-search">
+            <div class="category">
+              <img
+                src="./assets/feather.png"
+                alt=""
+                style="width: 50px; height: 50px"
+              />
+            </div>
+            <p>23 euros</p>
+          </article>
+        </div>
+      </section>
+
+      <!-- Section de cartes de produits -->
+      <section class="hero" aria-labelledby="hero-title">
+        <h2 id="hero-title" class="visually-hidden">Produits populaires</h2>
+        <div class="hero-container">
+          <article class="card-container" aria-label="Produit à 10 euros">
+            <img src="https://picsum.photos/200" alt="" />
+            <div class="price">
+              <p>10 euros</p>
+            </div>
+          </article>
+          <article class="card-container" aria-label="Produit à 147 euros">
+            <img src="https://picsum.photos/200" alt="" />
+            <div class="price">
+              <p>147 euros</p>
+            </div>
+          </article>
+          <article class="card-container" aria-label="Produit à 423 euros">
+            <img src="https://picsum.photos/200" alt="" />
+            <div class="price">
+              <p>423 euros</p>
+            </div>
+          </article>
+          <article class="card-container" aria-label="Produit à 500 euros">
+            <img src="https://picsum.photos/200" alt="" />
+            <div class="price">
+              <p>500 euros</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- Section caisse -->
+      <section class="caisse" aria-labelledby="caisse-title">
+        <h2 id="caisse-title" class="visually-hidden">Résumé de la caisse</h2>
+        <div class="caisse-container">
+          <div class="price_container">
+            <p>50 euros</p>
+          </div>
+          <div class="items-container">
+            <ul class="list-items" aria-label="Liste des articles en caisse">
+              <li>1er article</li>
+              <li>2eme article</li>
+              <li>3eme article</li>
+              <li>4eme article</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
