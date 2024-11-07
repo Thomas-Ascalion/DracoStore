@@ -1,0 +1,107 @@
+/* Réinitialisation de base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Style du header */
+.header {
+    width: 100%;
+    height: 280px;
+    background-color: #000000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+/* Style de la navbar */
+.navbar {
+    position: absolute;
+    top: 170px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 5rem;
+}
+
+.navbar ul {
+    list-style-type: none;
+    display: flex;
+    gap: 120px;
+}
+
+.navbar ul li a {
+    color: #000000;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 15px;
+    background-color: rgba(255, 255, 255);
+    border-radius: 2px;
+}
+
+.navbar ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.79);
+}
+
+/* main */
+main {
+    display: grid;
+        grid-template-columns: repeat(4, 1fr);
+}
+
+/* search */
+.search {
+    margin-top: 2rem;
+    width: max-content;
+    display: flex;
+    align-items: center;
+}
+
+.search-input {
+    font-size: 16px;
+    color: #333333;
+    padding: 10px;
+    border-radius: 40px;
+}
+
+
+/* cards */ 
+.card {
+    display: flex;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    width: 168px;
+    padding: 10px;
+    margin: 2rem;
+    background-color: white;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+img {
+    border-radius: 8px 8px 0 0;
+}
+
+button {
+    border: none;
+    color: #ffffff;
+    background-color: #583220;
+    float: center;
+    padding: 5px;
+    border-radius: 3px;
+    margin-top: 10px;
+}
+
+/* ticket */
+.ticket {
+    background-color: #BE9174;
+    color: #ffffff;
+}
