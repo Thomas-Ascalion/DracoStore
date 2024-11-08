@@ -99,6 +99,7 @@ h6 {
   padding-top: 10px;
   padding-left: 20px;
   padding-right: 20px;
+   cursor: pointer;
 }
 .navbar .navactive {
   background-color: rgb(138, 91, 34);
@@ -118,11 +119,13 @@ h6 {
 .barla {
   background-color: fuchsia;
   width: 150px;
+    padding: 20px;
 }
 .response {
   background-color: greenyellow;
   width: 50%;
   min-height: 150px;
+    padding: 20px;
 }
 
 .colonneD {
@@ -144,9 +147,11 @@ h6 {
 }
 
 .ticket {
-  background-color: blue;
+  color:rgb(255, 255, 255);
+  background-color: rgb(0, 0, 156);
   height: 50%;
   width: 100%;
+    padding: 20px;
 }
 
 .number {
@@ -158,6 +163,7 @@ h6 {
   text-align: center;
   justify-content: center;
   align-items: center;
+   cursor: pointer;
 }
 #x {
   grid-column: span 2;
@@ -168,37 +174,52 @@ h6 {
   grid-column: span 2;
   width: 100px;
   border-radius: 25% 25%;
+   cursor: pointer;
 }
 #minus {
     width: 100px;
     border-radius: 25% 25%;
+     cursor: pointer;
 }
 .total{
     background-color: cadetblue;
     padding: 10px;
+     cursor: pointer;
 }
 .espece{
     background-color: cadetblue;
 padding: 10px;
+ cursor: pointer;
 }
 
 .recherche{
+
   width: 100px;
   height: 100px;
   padding: 10px;
   border-bottom: #333 2px;
-
+ cursor: pointer;
 }
 .recherche:hover{
   width: 100px;
   height: 100px;
   padding: 10px;
  transform: rotate(45deg); 
+  cursor: pointer;
 }
 
+.client{
+    background-color: cadetblue;
+padding: 10px;
+ cursor: pointer;
+}
 
-
-
+.connexion img{
+  width: 100px;
+  height: 100px;
+  padding: 10px;
+ cursor: pointer;
+}
 
 /**    javascript recherche */
 /* Masque l'overlay par défaut ne fonctionne pas a verifier pourquoi .... */
@@ -258,8 +279,10 @@ padding: 10px;
     font-size: 16px;
     cursor: pointer;
     border-radius: 4px;
+     cursor: pointer;
 }
 
 .virtual-keyboard button:hover {
     background-color: #666;
+     cursor: pointer;
 }
