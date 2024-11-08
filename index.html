@@ -1,0 +1,119 @@
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Draco Store</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="icon" href="image\dracostore_logo.png" type="svg" />
+  </head>
+
+  <body>
+    <header>
+      <div class="header">
+        <div class="logo">
+          <img src="image\dracostore_logo.png" alt="Dracostore corporation" />
+        </div>
+        <div class="navbar">
+          <ul>
+            <li><img src="image\caisse.svg" alt="Caisse" /> Caisse</li>
+            <li class="navactive">
+              <img src="image\items.svg" alt="Items" />Items
+            </li>
+            <li class="navactive">
+              <img src="image\client.svg" alt="Clients" />Clients
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="container">
+        <div class="barla">
+          <div class="recherche" onclick="openSearch()">
+            <img src="image\recherche.svg" alt="recherche" />
+          </div>
+        </div>
+        <div class="response"></div>
+        <div class="colonneD">
+          <div class="ticket"> liste des articles sur le ticket</div>
+
+          <div class="calculatrice">
+            <div class="number" id="x">X</div>
+            <div class="number" id="minus">Suppr</div>
+            <div class="number" id="7">7</div>
+            <div class="number" id="8">8</div>
+            <div class="number" id="9">9</div>
+            <div class="number" id="4">4</div>
+            <div class="number" id="5">5</div>
+            <div class="number" id="6">6</div>
+            <div class="number" id="1">1</div>
+            <div class="number" id="2">2</div>
+            <div class="number" id="3">3</div>
+            <div class="number" id="0">0</div>
+            <div class="number" id="enter">enter</div>
+            <div class="total">TOTAL</div>
+            <div class="espece">Espèces</div>
+          </div>
+        </div>
+      </div>
+<div class="recherche" onclick="openSearch()">
+    <img src="image/recherche.svg" alt="recherche" />
+</div>
+
+<div class="overlay" id="searchOverlay" onclick="closeSearch(event)">
+    <div class="search-modal" onclick="event.stopPropagation()">
+        <input type="text" id="searchInput" placeholder="Rechercher..." />
+        <img src="image/recherche.svg" alt="valider" class="search-icon" onclick="submitSearch()" />
+    </div>
+<div class="virtual-keyboard">
+    <div class="keyboard-row">
+        <button onclick="insertCharacter('a', event)">a</button>
+        <button onclick="insertCharacter('z', event)">z</button>
+        <button onclick="insertCharacter('e', event)">e</button>
+        <button onclick="insertCharacter('r', event)">r</button>
+<button onclick="insertCharacter('t', event)">t</button>
+<button onclick="insertCharacter('y', event)">y</button>
+<button onclick="insertCharacter('...', event)">...</button>
+<!--          remplir le clavier quand celui ci fonctionnera-->
+
+
+
+    </div>
+    <div class="keyboard-row">
+        <button onclick="deleteCharacter(event)">Suppr</button>
+        <button onclick="submitSearch(event)">Entrer</button>
+    </div>
+</div>
+
+</div>
+
+    </main>
+    <script>
+// Ouvre l'overlay de recherche
+function openSearch() {
+    document.getElementById("searchOverlay").style.display = "flex";
+}
+
+// Ferme l'overlay de recherche si l'utilisateur clique en dehors de la boîte de dialogue
+function closeSearch(event) {
+    const overlay = document.getElementById("searchOverlay");
+    // Vérifie si le clic s'est produit en dehors de la boîte modale
+    if (event.target === overlay) {
+        overlay.style.display = "none";
+    }
+}
+
+// Soumet la recherche et ferme l'overlay
+function submitSearch(event) {
+    event.stopPropagation(); // Empêche la fermeture de l'overlay si on clique sur le bouton "Entrer"
+    const searchValue = document.getElementById("searchInput").value;
+    console.log("Recherche soumise:", searchValue);
+    document.getElementById("searchOverlay").style.display = "none"; // Ferme l'overlay
+}
+
+
+
+
+    </script>
+  </body>
+</html>

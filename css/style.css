@@ -1,0 +1,265 @@
+/*
+  Josh's Custom CSS Reset
+  https://www.joshwcomeau.com/css/custom-css-reset/
+*/
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+#root,
+#__next {
+  isolation: isolate;
+}
+
+/*######################################################################*/
+
+@font-face {
+  font-family: "medPolice";
+
+  src: url("image/Trajan Pro Regular.ttf") format("ttf");
+}
+
+.body {
+  font-family: "medPolice", serif;
+}
+
+.logo img {
+  width: 150px;
+  height: 150px;
+  padding: 10px;
+}
+
+.header {
+  display: flex;
+  align-items: end;
+  justify-content: space-around;
+  background-color: aqua;
+}
+
+.main {
+  display: flex;
+  height: auto;
+}
+/* barre de navigation */
+.navbar ul {
+  background-color: rgb(0, 255, 0);
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 26px;
+}
+
+.navbar ul li {
+  background-color: darkorange;
+  font-size: 50px;
+  padding-top: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.navbar .navactive {
+  background-color: rgb(138, 91, 34);
+}
+
+.navbar img {
+  display: inline-block;
+  width: 50px;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  height: calc(100vh - 150px);
+}
+
+.barla {
+  background-color: fuchsia;
+  width: 150px;
+}
+.response {
+  background-color: greenyellow;
+  width: 50%;
+  min-height: 150px;
+}
+
+.colonneD {
+  display: flex;
+  flex-direction: column;
+  background-color: hotpink;
+
+  width: 50%;
+}
+
+.calculatrice {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  background-color: lightsalmon;
+  justify-items: center;
+  height: 50%;
+  width: 100%;
+}
+
+.ticket {
+  background-color: blue;
+  height: 50%;
+  width: 100%;
+}
+
+.number {
+  display: flex;
+  width: 50px;
+  height: 50px;
+  border-radius: 50% 50%;
+  background-color: rgb(67, 234, 243);
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+#x {
+  grid-column: span 2;
+  width: 100px;
+  border-radius: 25% 25%;
+}
+#enter {
+  grid-column: span 2;
+  width: 100px;
+  border-radius: 25% 25%;
+}
+#minus {
+    width: 100px;
+    border-radius: 25% 25%;
+}
+.total{
+    background-color: cadetblue;
+    padding: 10px;
+}
+.espece{
+    background-color: cadetblue;
+padding: 10px;
+}
+
+.recherche{
+  width: 100px;
+  height: 100px;
+  padding: 10px;
+  border-bottom: #333 2px;
+
+}
+.recherche:hover{
+  width: 100px;
+  height: 100px;
+  padding: 10px;
+ transform: rotate(45deg); 
+}
+
+
+
+
+
+/**    javascript recherche */
+/* Masque l'overlay par défaut ne fonctionne pas a verifier pourquoi .... */
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000; /* Au-dessus  */
+}
+.search-modal {
+    background: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 300px;
+    max-width: 90%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.search-modal input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+}
+
+.search-icon {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+}
+.virtual-keyboard {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: #333;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    justify-content: center;
+}
+
+.virtual-keyboard button {
+    background-color: #555;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.virtual-keyboard button:hover {
+    background-color: #666;
+}
