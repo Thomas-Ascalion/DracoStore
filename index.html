@@ -9,32 +9,60 @@
     <link rel="shortcut icon" href="/images/dracostore_logo.png" type="image/x-icon">
     <script src="https://kit.fontawesome.com/1ae84cb769.js" crossorigin="anonymous"></script>
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@100..900&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@100..900&family=Inknut+Antiqua:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
 </head>
 <body>
-    <header>
-        <img class="logo" src="/images/dracostore_logo.png" alt="Logo de la boutique Dracostore">
-    <nav>
+<header role="banner" aria-label="En-tête de la boutique Dracostore">
+    <div class="dorure" aria-hidden="true">
+        <img src="/images/angle_left.png" alt="" aria-hidden="true">
+        <img src="/images/angle_right.png" alt="" aria-hidden="true">
+    </div>
+    <img class="logo" src="/images/dracostore_logo.png" alt="Logo de la boutique Dracostore"
+        aria-label="Logo de Dracostore">
+    <nav aria-label="Menu principal de navigation">
         <ul>
-            <li>Caisse</li>
-            <li>Produits</li>
-            <li>Clients</li>
+            <li>
+                <a href="caisse.html" aria-label="Accéder à la caisse">
+                    <img class="icon" src="/images/Chest.png" alt="Icône caisse" aria-hidden="true">
+                    Caisse
+                </a>
+            </li>
+            <li>
+                <a href="produits.html" aria-label="Voir les produits">
+                    <img class="icon" src="/images/items.png" alt="Icône produits" aria-hidden="true">
+                    Produits
+                </a>
+            </li>
+            <li>
+                <a href="clients.html" aria-label="Gestion des clients">
+                    <img class="icon" src="/images/client.png" alt="Icône clients" aria-hidden="true">
+                    Clients
+                </a>
+            </li>
         </ul>
     </nav>
 </header>
 <main>
-    <button> <i class="fa-solid fa-magnifying-glass"></i></button>
-    <h1>Bienvenu sur le logiciel de gestion de Dracostore</h1>
-    <section role="region" aria-labelledby="connexion">
-        <h2 id="connexion"> Connexion</h2>
-              <label for="name">Identifiant</label>
-              <input type="text" placeholder="Votre identifiant">
-              <label for="password"> Mot de passe</label>
-              <input type="text" placeholder="Votre mot de passe">
-              <button type="submit"> Connexion </button>
-    </section>
-    <section role="region" aria-labelledby="ticket">
-        <h2 id="ticket"> Ticket</h2>
-    </section>
+<section role="region" aria-label="Recherche de produits par catégorie">
+    <div class="recherche">
+        <img class="jumelle" src="/images/recherche.png" alt="Icône Recherche">
+        <ul>
+            <li><img src="/images/axe.png" alt="">Armes</li>
+            <li><img src="/images/armor.png" alt="">Armures</li>
+            <li><img src="/images/potion.png" alt="">Potions</li>
+            <li><img src="/images/bread.png" alt="">Nourriture</li>
+        </ul>
+    </div>
+
+</section>
 
 </main>
 </body>
