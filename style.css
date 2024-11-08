@@ -1,24 +1,58 @@
+:root {
+    /* Couleurs principales */
+    --header-background: #38160D;
+    --white-color: #F9F7F0;
+    --card-background: #4D3624;
+    --section-border: #BAADAD;
+    --coin-color: #FFD700;
+    --page-background: #DBCCAD;
+    --font-color: #1E1E1E;
+
+    /* Polices */
+    --font-title: 'Grenze Gotisch', serif;
+    --font-body: 'Inknut Antiqua', serif;
+}
+
+main{
+    display: flex;
+}
+
+h2,
+.nav-links li {
+    font-family: var(--font-title);
+}
+
+h3, p{
+    font-family: var(--font-body);
+}
 
 .header {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
     height: 200px;
     padding: 20px;
     position: relative;
     background-color: red;
 }
 
+.cg-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.cd-container {
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 1;
+}
+
 .logo {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    flex: 1;
 }
 
 .logo img {
-    max-width: 100px;
+    max-width: 200px;
     height: auto;
 }
 

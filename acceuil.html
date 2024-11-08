@@ -4,18 +4,31 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>DracoStore - Interface de Gestion</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&family=Grenze+Gotisch:wght@100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&family=Grenze+Gotisch:wght@100..900&family=Inknut+Antiqua:wght@300;400;500;600;700;800;900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+
     <link rel="stylesheet" href="reset.css" />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <!-- En-tête avec le logo et la barre de navigation -->
     <header class="header" role="banner">
+      <div class="cg-container"><img src="./assets/cg.png" alt="" /></div>
+      <div class="cd-container"><img src="./assets/cd.png" alt="" /></div>
       <div class="logo">
-        <img
-          src="/assets/dracostore_logo.png"
-          alt=""
-          aria-label="Logo DracoStore"
-        />
+        <img src="/assets/logo.png" alt="" aria-label="Logo DracoStore" />
       </div>
       <nav class="navbar-container" aria-label="Navigation principale">
         <!-- Navigation principale avec des liens pour différentes sections -->
@@ -40,13 +53,12 @@
             aria-controls="searchField"
           >
             <img
-              src="/assets/wand-sparkles-solid.svg"
-              style="width: 100px; height: 100px"
+              src="/assets/search.png"
+              style="width: 50px; height: 50px"
               alt=""
               class="search-icon"
               aria-hidden="true"
             />
-            <span class="arrow" aria-hidden="true"> → </span>
           </div>
           <!-- Champ de recherche caché par défaut -->
           <input
@@ -63,17 +75,7 @@
           <article class="category-search">
             <div class="category">
               <img
-                src="./assets/feather.png"
-                alt=""
-                style="width: 50px; height: 50px"
-              />
-            </div>
-            <p>Nourriture</p>
-          </article>
-          <article class="category-search">
-            <div class="category">
-              <img
-                src="./assets/feather.png"
+                src="./assets/axe.png"
                 alt=""
                 style="width: 50px; height: 50px"
               />
@@ -83,17 +85,17 @@
           <article class="category-search">
             <div class="category">
               <img
-                src="./assets/feather.png"
+                src="./assets/armor.png"
                 alt=""
                 style="width: 50px; height: 50px"
               />
             </div>
-            <p>Armure</p>
+            <p>Armures</p>
           </article>
           <article class="category-search">
             <div class="category">
               <img
-                src="./assets/feather.png"
+                src="./assets/potion.png"
                 alt=""
                 style="width: 50px; height: 50px"
               />
@@ -103,12 +105,12 @@
           <article class="category-search">
             <div class="category">
               <img
-                src="./assets/feather.png"
+                src="./assets/bread.png"
                 alt=""
                 style="width: 50px; height: 50px"
               />
             </div>
-            <p>23 euros</p>
+            <p>Nourriture</p>
           </article>
         </div>
       </section>
