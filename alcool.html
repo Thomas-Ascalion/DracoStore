@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accueil</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="accueil.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link href="https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="header">
+            <div class="cadre">
+                <img src="assets/cadre_g.png" width="100px" height="80px">
+                <img src="assets/cadre.png" width="100px" height="80px">
+            </div>
+            <img class="logo" src="assets\dracostore_good.png" alt="Logo du site" width="100px" height="140px">
+        </div>
+        <div class="main-nav">
+            <nav class="navbar">
+                <ul>
+                    <li><a href="#caisse">Caisse</a></li>
+                    <li><a href="#items">Items</a></li>
+                    <li><a href="#client">Clients</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <form>
+            <div class="search">
+                <span class="search-icon material-symbols-outlined" onclick="toggleSearch()">search</span>
+                <div class="search-bar">
+                    <input type="text" placeholder="Rechercher...">
+                </div>
+            </div>
+            <div class="search-container">
+            <div class="search-options">
+                <div><a href="viande.html" class="search-option">Viande</a></div>
+                <div><a href="fromage.html" class="search-option">Fromage</a></div>
+                <div><a href="alcool.html" class="search-option">Alcool</a></div>
+                <div><a href="accueil.html" class="search-option">Tout</a></div>
+            </div>
+            </div>
+        </form>
+        <section class="cards">
+            <div class="card">
+                <div class="card-image">
+                    <img src="assets\porto.jpg" alt="Produit médiéval">
+                </div>
+                <div class="card-content">
+                    <p class="product-name">Porto de 2018 Clos Du Vin</p>
+                    <p class="product-price">20 <i class="fas fa-coins coin"></i></p>
+                    <button type="button" class="btn-add">Ajouter au Sac</button>
+                </div>
+            </div>
+        </section>
+        <section class="cards">
+            <div class="card">
+                <div class="card-image">
+                    <img src="assets\vin.png" alt="Produit médiéval">
+                </div>
+                <div class="card-content">
+                    <p class="product-name">Vin Rouge de 2020 </p>
+                    <p class="product-price">15 <i class="fas fa-coins coin"></i></p>
+                    <button type="button" class="btn-add">Ajouter au Sac</button>
+                </div>
+            </div>
+        </section>
+        <section class="cards">
+            <div class="card">
+                <div class="card-image">
+                    <img src="assets/biere.webp" alt="Produit médiéval">
+                </div>
+                <div class="card-content">
+                    <p class="product-name">Bière de 500ml à 1L</p>
+                    <p class="product-price">8 <i class="fas fa-coins coin"></i></p>
+                    <button type="button" class="btn-add">Ajouter au Sac</button>
+                </div>
+            </div>
+        </section>
+        <section class="ticket">
+            <div class="table">
+                <p>1000 <i class="fas fa-coins coin"></i></p>
+            </div>
+            <p>Fromage Mystique x1</p>
+            <p>Viande Fumée au Feu de Bois x2</p>
+            <div class="btn-two">
+                <button class="btn-t">Carte</button>
+                <button class="btn-t">Espèce</button>
+            </div>
+        </section>
+    </main>
+</body>
+<script src="script.js"></script>
+
+</html>
